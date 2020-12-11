@@ -36,45 +36,34 @@
     </section>
     <!-- End Header -->
 
-    <!-- Hero Section  -->
-    <section id="hero">
-        <header class="new-header">
-            <div class="img-wrapper">
-                <img src="images/home-bg.jpg" />
-            </div>
-            <div class="banner">
-                <h1>MTC</h1>
-                <h1>More Than Conquerors</h1>
-                <p>Anointed for his Glory </p>
+    <div class="container mt-2">
 
-                <a href="#about" class="cta">Discover</a>
-            </div>
-        </header>
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
 
+                    <h3>Upload a new action </h3>
 
-        <!-- End Hero Section  -->
-
-
-        <!-- About Section -->
-        <div id="about">
-            <div class="about container">
-                <div class="col-left">
-                    <div class="about-img">
-                        <img src="images/home-bg.jpg" alt="img">
+                    <textarea id="post" class="form-control" placeholder=" Enter action description..."></textarea>
+                    <textarea id="date" class="form-control" placeholder=" Enter action date..."></textarea>
+                    <textarea id="tag" class="form-control" placeholder=" Enter action tag..."></textarea>
+                    <textarea id="link" class="form-control" placeholder=" Enter action link..."></textarea>
+                    <textarea id="location" class="form-control" placeholder=" Enter action location"></textarea>
+                    <input type="file" class="form-control" id="image" accept="images/*">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
                     </div>
-                </div>
-                <div class="col-right">
-                    <h1 class="section-title">About <span>us</span></h1>
-                    <h2>More Than Conquerors</h2>
-                    <p>Marine Link Freight Services is a private owned company committed in providing world class services in as much as shipping and freight forwarding is concerned. We are open 6 days a week and we provide A to Z from picking cargo from
-                        country of origin to country destination including customs clearance and delivery. As private owned company our paper work is in compliance with the south africa revenue authority. At Marine Freight Services, no cargo is too huge
-                        for our small hands to handle and no cargo is small for our huge experience in teh industry to handle. We provide best service based on our years of experience and expertise.</p>
-                    <a href="contact.html" class="cta">Read more</a>
-                </div>
+
+                </form>
             </div>
+
         </div>
-    </section>
-    <!-- End About Section -->
+        <div class="row mt-4" id="posts">
+
+        </div>
+
+    </div>
+    <!-- End  Section -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -121,7 +110,7 @@
     <!-- End Footer -->
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js">
     </script>
-    <script src="./app.js"></script>
+    <script src="adminEvent.js"></script>
 </body>
 
 </html>`

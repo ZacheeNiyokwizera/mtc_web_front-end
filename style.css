@@ -680,6 +680,21 @@
                 margin-bottom: 5rem;
                 text-align: center;
             }
+            
+            .card-info button {
+                z-index: 1;
+                width: 37rem;
+                height: 3rem;
+                background-color: #c29525;
+                border: none;
+                font-family: "Baloo Da 2", serif;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                color: #eee;
+                border-radius: 0.3rem;
+                box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+                margin-left: -11px;
+            }
             /* contact Section */
             
             .contact {
@@ -701,7 +716,7 @@
             
             .contact-left {
                 width: 35%;
-                background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(images/home-bg.jpg) center no-repeat;
+                background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(images/for.jpg) center no-repeat;
                 background-size: cover;
             }
             
@@ -1100,14 +1115,21 @@
                 .footer {
                     height: 50%;
                 }
-                .social-list {
+                .social-list a {
+                    display: flex;
+                    flex-direction: column;
                     margin-top: 20px;
+                    margin-bottom: 20px;
                 }
                 .contact-heading {
                     font-size: 25px;
                 }
                 .words {
                     margin-bottom: 20px;
+                    margin-left: -220px;
+                }
+                .myIcon {
+                    margin-left: -90px;
                 }
                 .card-info button {
                     z-index: 1;
